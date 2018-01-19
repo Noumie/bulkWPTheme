@@ -55,7 +55,7 @@ a:not([class^='btn']){
 		text-decoration:underline;
 	}
 }
-.both, .clear, .clearboth, %both, %clear, %clearboth{
+.both, .clear, .clearboth, .clearfix, %both, %clear, %clearboth{
 	@include clearfix();
 }
 #page, #main, %page{
