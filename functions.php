@@ -63,7 +63,10 @@ function disable_wp_bullshit()
 {
 	wp_deregister_script('masonry');
 	wp_deregister_script('jquery-masonry');
-	wp_deregister_script('jquery');
+	if ( !( is_admin() ) )
+	{
+		wp_deregister_script('jquery');
+	}
 	wp_deregister_script('wp-embed');
 	disable_wp_emojicons();
 }
